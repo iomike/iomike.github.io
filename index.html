@@ -16,18 +16,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
-      <script>
-        $('#contactForm').on('submit', function() {            
-                                    $.post($form.attr('action'), $form.serialize())
-                                    .done(function(data) {
-                                      // ... Success!
-                                    })
-                                    .fail(function(jqXHR, textStatus, errorThrown) {
-                                      // ... Failure!
-                                    });
-                                    return false;
-                                  });
-      </script>
+      <script src="/js/contactform.js"></script>
   </head><body>
     <div class="hidden-xs navbar navbar-default navbar-fixed-bottom visible-lg visible-md visible-sm">
       <div class="container">
