@@ -2,32 +2,32 @@
     <meta charset="utf-8">
     <title>Mike Kelley - Digital native, musician, and technologist.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css" rel="stylesheet">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
-   <link href="/css/stylesheet.css" rel="stylesheet" type="text/css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
-    queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file://
-    -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script>
-      $('#contactForm').on('submit', function() {            
-                        $.post($form.attr('action'), $form.serialize())
-                        .done(function(data) {
-                          // ... Success!
-                        })
-                        .fail(function(jqXHR, textStatus, errorThrown) {
-                          // ... Failure!
-                        });
-                        return false;
-                      });
-    </script>
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css" rel="stylesheet">
+      <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
+      <link href="/css/stylesheet.css" rel="stylesheet" type="text/css">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
+      queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file://
+      -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <script>
+        $('#contactForm').on('submit', function() {            
+                                    $.post($form.attr('action'), $form.serialize())
+                                    .done(function(data) {
+                                      // ... Success!
+                                    })
+                                    .fail(function(jqXHR, textStatus, errorThrown) {
+                                      // ... Failure!
+                                    });
+                                    return false;
+                                  });
+      </script>
   </head><body>
     <div class="hidden-xs navbar navbar-default navbar-fixed-bottom visible-lg visible-md visible-sm">
       <div class="container">
@@ -86,19 +86,19 @@
 					</a>
                 </li>
                 <li>
-                  <a data-toggle="modal" data-target="#workmodal">
+                  <a data-toggle="modal" data-target="#workmodal" href="#">
 						<span class="menu-icon fa fa-keyboard-o fa-4x"></span>
 						Work
 					</a>
                 </li>
                 <li>
-                  <a data-target="#musicmodal" data-toggle="modal">
+                  <a data-target="#musicmodal" data-toggle="modal" href="#">
 						<span class="menu-icon fa fa-headphones fa-4x"></span>
 						Music
 					</a>
                 </li>
                 <li>
-                  <a data-toggle="modal" data-target="#contactmodal">
+                  <a data-toggle="modal" data-target="#contactmodal" href="#">
 						<span class="menu-icon fa fa-comment fa-4x fa-flip-horizontal"></span>
 						Contact
 					</a>
@@ -111,7 +111,7 @@
       <!-- /.row -->
       <div class="fade modal" id="aboutmodal">
         <div class="modal-dialog modal-lg">
-     <div class="modal-content panel-primary">
+          <div class="modal-content panel-primary">
             <div class="modal-header  panel-heading">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               <h3 class="modal-title" id="myModalLabel">About Mike Kelley</h3>
@@ -129,19 +129,17 @@
                     I am still excited by learning something new each day.</p>
                 </div>
                 <div class="col-md-6 center-block">
-                  
-                  <img src="/img/mike.jpg" class="img-responsive media-object center-block"  style="padding:10px;">
+                  <img src="/img/mike.jpg" class="img-responsive media-object center-block" style="padding:10px;">
                 </div>
               </div>
               <!-- end -->
             </div>
-            
           </div>
         </div>
       </div>
       <div class="fade modal" id="workmodal" draggable="true">
         <div class="modal-dialog modal-lg">
-     <div class="modal-content panel-primary">
+          <div class="modal-content panel-primary">
             <div class="modal-header  panel-heading">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               <h3 class="modal-title" id="myModalLabel">Selected Work and Projects</h3>
@@ -236,13 +234,12 @@
               </div>
               <!-- end -->
             </div>
-            
           </div>
         </div>
       </div>
       <div class="fade modal" id="musicmodal">
         <div class="modal-dialog modal-lg">
-     <div class="modal-content panel-primary">
+          <div class="modal-content panel-primary">
             <div class="modal-header  panel-heading">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               <h3 class="modal-title" id="myModalLabel">Music</h3>
@@ -329,7 +326,6 @@
                 </div>
               </form>
             </div>
-            
           </div>
         </div>
       </div>
