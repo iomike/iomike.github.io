@@ -1,18 +1,20 @@
 <html><head>
     <meta charset="utf-8">
-    <title>Mike Kelley</title>
+    <title>Mike Kelley - Digital native, musician, and technologist.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/yeti/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
     <style type="text/css">
       body {
                       	margin-top: 50px;
                       	margin-bottom: 50px;
-                       background: url(http://instagram.com/p/75ejIFjOAX/media/?size=l) no-repeat center center fixed; 
-                       ddbackground: url(http://instagram.com/p/54X7LCjOOV/media/?size=l) no-repeat center center fixed; 
+                       background: url(background.jpg) no-repeat center center fixed; 
+        OLDbackground: url(http://instagram.com/p/75ejIFjOAX/media/?size=l) no-repeat center center fixed; 
+        
+                        ddbackground: url(http://instagram.com/p/54X7LCjOOV/media/?size=l) no-repeat center center fixed; 
                     -webkit-background-size: cover;
                         -moz-background-size: cover;
                         -o-background-size: cover;
@@ -23,7 +25,28 @@
                           {
                           font-family: 'Cabin', cursive;
                             font-weight:bold;
+                            codlor:#fff;
                           }
+                          .lead
+                          
+                          {
+                          color:#267E0C;
+                          }
+                          
+                          .navbar, .modal-dialog
+                          {
+                          
+                          opacity: .7;
+                          }
+                          
+                        .modal-dialog
+                          {
+                          
+                          opacity: .9;
+                          }
+                          
+                          
+                          
                   .modal-header-success {
                 color:#fff;
                 padding:9px 15px;
@@ -67,7 +90,7 @@
                       });
     </script>
   </head><body>
-    <div class="hidden-xs navbar navbar-default navbar-fixed-bottom navbar-inverse visible-lg visible-md visible-sm">
+    <div class="hidden-xs navbar navbar-default navbar-fixed-bottom visible-lg visible-md visible-sm">
       <div class="container">
         <div class="navbar-header">
           <a type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></a>
@@ -78,7 +101,7 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <p class="navbar-text navbar-right small">© 2015 | Made in Georgia, USA</p>
-          <ul class="lead nav navbar-left navbar-nav navbar-inverse">
+          <ul class="lead nav navbar-left navbar-nav navbar-default">
             <li>
               <a data-toggle="modal" data-target="#aboutmodal">About</a>
             </li>
@@ -99,8 +122,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5 col-sm-12 text-left">
-          <h1>Mike Kelley</h1>
-          <h2 class="lead">Digital native, musician, and technologist.</h2>
+          <h1 class="">Mike Kelley</h1>
+          <p class="lead">Digital native, musician, and technologist.</p>
           <p></p>
           <p class="text-left">
             <a href="http://www.linkedin.com/in/mkelley" target="_blank"><span class="menu-icon fa fa-linkedin-square  fa-2x"></span></a>
@@ -149,8 +172,8 @@
       <!-- /.row -->
       <div class="fade modal" id="aboutmodal">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header modal-header-success">
+     <div class="modal-content panel-primary">
+            <div class="modal-header  panel-heading">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               <h3 class="modal-title" id="myModalLabel">About Mike Kelley</h3>
             </div>
@@ -166,49 +189,21 @@
                     expertise with web design and marketing together in my current role and
                     I am still excited by learning something new each day.</p>
                 </div>
-                <div class="col-md-6">
-                  <!-- Carousel -->
-                  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img src="https://instagram.com/p/5DPhrMjOO8/media/?size=m" alt="First slide">
-                      </div>
-                      <div class="item">
-                        <img src="https://instagram.com/p/ngWTJzDOM3/media/?size=m" alt="Second slide">\</div>
-                      <div class="item">
-                        <img src="https://instagram.com/p/11vUaKjOAn/media/?size=m" alt="Third slide">
-                      </div>
-                    </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-		    	<span class="glyphicon glyphicon-chevron-left"></span>
-			</a>
-                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-		    	<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
-                  </div>
-                  <!-- /carousel -->
+                <div class="col-md-6 center-block">
+                  
+                  <img src="mike.jpg" class="img-responsive media-object center-block"  style="padding:10px;">
                 </div>
               </div>
               <!-- end -->
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+            
           </div>
         </div>
       </div>
       <div class="fade modal" id="workmodal" draggable="true">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header modal-header-success">
+     <div class="modal-content panel-primary">
+            <div class="modal-header  panel-heading">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               <h3 class="modal-title" id="myModalLabel">Selected Work and Projects</h3>
             </div>
@@ -220,27 +215,27 @@
                     <p class="lead">I am a leader, a web designer, and a project manager. I have worked in
                       Health Care for over two decades in IT &amp; Marketing roles and lead projects
                       both big and small.</p>
-                    <div class="list-group-item active">
+                    <div class="list-group-item info panel-info ">
                       <div class="row-action-primary pull-right">
                         <i class="fa fa-tags fa-3x"></i>
                       </div>
-                      <div class="row-content">
-                        <h4 class="list-group-item-heading">Skills &amp; Expertise</h4>
+                      <div class="row-content panel-heading ">
+                        <h4 class="list-group-item-heading panel-title">Skills &amp; Expertise</h4>
                         <p class="list-group-item-text">
-                          <span class="label label-primary">Web Design</span>
-                          <span class="label label-primary">Web Development</span>
-                          <span class="label label-primary">Web Content Management</span>
-                          <span class="label label-primary">Social Media</span>
-                          <span class="label label-primary">Graphic Design</span>
-                          <span class="label label-primary">Digital Project Management</span>
-                          <span class="label label-primary">HTML5</span>
-                          <span class="label label-primary">CSS3</span>
-                          <span class="label label-primary">SEO</span>
-                          <span class="label label-primary">PHP</span>
-                          <span class="label label-primary">Web Analytics</span>
-                          <span class="label label-primary">Mobile Internet</span>
-                          <span class="label label-primary">Information Architecture</span>
-                          <span class="label label-primary">Delivery Management</span>
+                          <span class="label  label-info">Web Design</span>
+                          <span class="label  label-info">Web Development</span>
+                          <span class="label  label-info">Web Content Management</span>
+                          <span class="label label-info">Social Media</span>
+                          <span class="label  label-info">Graphic Design</span>
+                          <span class="label label-info">Digital Project Management</span>
+                          <span class="label label-info">HTML5</span>
+                          <span class="label  label-info">CSS3</span>
+                          <span class="label  label-info">SEO</span>
+                          <span class="label  label-info">PHP</span>
+                          <span class="label  label-info">Web Analytics</span>
+                          <span class="label  label-info">Mobile Internet</span>
+                          <span class="label  label-info">Information Architecture</span>
+                          <span class="label  label-info">Delivery Management</span>
                         </p>
                       </div>
                     </div>
@@ -302,16 +297,14 @@
               </div>
               <!-- end -->
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+            
           </div>
         </div>
       </div>
       <div class="fade modal" id="musicmodal">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header modal-header-success">
+     <div class="modal-content panel-primary">
+            <div class="modal-header  panel-heading">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               <h3 class="modal-title" id="myModalLabel">Music</h3>
             </div>
@@ -320,7 +313,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="col-md-12">
-                    <img src="https://instagram.com/p/6DvJrUjOHO/media/?size=t" class="img-responsive img-rounded media-object pull-right" style="padding:10px;">
+                    <img src="https://instagram.com/p/5DPhrMjOO8/media/?size=t" class="img-responsive img-rounded media-object pull-right" style="padding:10px;">
                     <p class="text-left">I have been a drummer for 30 years and started playing other instruments
                       before I was 10. I'm currently playing, writng and recording with a variety
                       of people. On the business-side of music, I am a songwriting member of
@@ -354,10 +347,10 @@
       </div>
       <div class="fade modal" id="contactmodal">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header modal-header-success">
+          <div class="modal-content panel-primary">
+            <div class="modal-header  panel-heading">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h4 class="modal-title" id="myModalLabel">Contact</h4>
+              <h3 class="modal-title" id="myModalLabel">Contact</h3>
             </div>
             <div class="modal-body">
               <!--- redirect --->
@@ -397,9 +390,7 @@
                 </div>
               </form>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+            
           </div>
         </div>
       </div>
