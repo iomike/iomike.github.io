@@ -1,625 +1,511 @@
 <html>
-    <head>
-        <meta name="keywords" content="resume, mike kelley, html, chattanooga">
-        <meta name="description" content="resume' of Mike Kelley">
-        <title>Mike Kelley - Digital Content Technology</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://bootswatch.com/flatly/bootstrap.css" rel="stylesheet" type="text/css"> 
-        <style>
-            .head,
-            .head h1,
-            a.tellink {
-            color: #fff
-            }
-            .head {
-            background: #2c3e50;
-            border-bottom: 5px solid #af3f24
-            }
-            .begin {
-            margin-top: 20px
-            }
-            h3,
-            h4 {
-            padding: 0;
-            margin: 0
-            }
-            .endline {
-            border-bottom: 1px solid #91aac3;
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="resume, mike kelley, html, chattanooga">
+    <meta name="description" content="resume' of Mike Kelley">
+    <title>Mike Kelley - Digital Content Technology</title>
+    <script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic"
+    rel="stylesheet" type="text/css">
+    <style>
+      body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+         margin:0;
+        padding:0;
+}
+
+      .section-primary {
+    background-color: #455A64 !important;
+      }
+   
+            footer.section-primary
+      {
+       border-top: 5px double #BDBDBD; 
+        color:#fff;
+      }
+
+      .contact
+        {
+           
+   			
+           	border-bottom: 5px double #BDBDBD;
+          	height:50px;
+			padding:5px 0;
+        }
+      .contact a
+      {
+       color:#fff; 
+      }
+                .endline {
+          
             padding: 10px 0px;
             }
             .lastline
             {
             padding: 10px 0px 0px;
             }
-            .jobby
-            {
+          header
+      {color:#fff;}
+        h3,
+            h4 {
+            padding: 0;
+            margin: 0
             }
-            .jobby:hover
-            {
-            background-color:#dde5ec;
-            }
-            .page-header {
-            border-bottom: 0 solid #000;
-            }
-            .img-thumbnail
-            {
-            min-height:175px;
-            max-height:175px;   
-            width:100%;
-            }
-</style>
-        <script type="text/javascript">
-       $(document).ready(function() {
-        
-   /* activate the carousel */
-   $("#modal-carousel").carousel({interval:false});
-
-   /* change modal title when slide changes */
-   $("#modal-carousel").on("slid.bs.carousel",       function () {
-        $(".modal-title")
-        .html($(this)
-        .find(".active img")
-        .attr("title"));
-   });
-
-   /* when clicking a thumbnail */
-   $(".row .thumbnail").click(function(){
-    var content = $(".carousel-inner");
-    var title = $(".modal-title");
+      .jobby:hover .fa{color:#455A64;}
+      .dark-primary-color, .label-primary    { background: #455A64; }
+.primary-color { background: #607D8B; }
+.light-primary-color  { background: #CFD8DC; }
+.text-primary-color   { color: #FFFFFF; }
+.accent-color, .jobby:hover        { color:#fff;background: #FF5722; }
+    .jobby  .fa {color:#FF5722;}
+      .jobby:hover, header h1 small {-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;}
+.primary-text-color  { color: #212121; }
+.secondary-text-color   { color: #757575; }
+.divider-color     { border-color: #BDBDBD; }
+      header h1 small{color:#FF5722;opacity: 0.8;
+    </style>
+  </head>
   
-    content.empty();  
-    title.empty();
-  
-  	var id = this.id;  
-     var repo = $("#img-repo .item");
-     var repoCopy = repo.filter("#" + id).clone();
-     var active = repoCopy.first();
-  
-    active.addClass("active");
-    title.html(active.find("img").attr("title"));
-  	content.append(repoCopy);
-
-    // show the modal
-  	$("#modal-gallery").modal("show");
-  });
-
-        </script>
-    </head>
-    <body>
-        <div class="section head">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="page-header">
-                            <h1>Mike Kelley &nbsp;<small>Digital Content Technology</small></h1>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-right">
-                        <div class="page-header">
-                            <ul class="list-unstyled ">
-                                <li>4833 Lone Hill Road
-                                    <i class="fa fa-map-marker text-danger" aria-hidden="true"></i>
-                                </li>
-                                <li>Chattanooga, Tennessee &nbsp;&nbsp;&nbsp;</li>
-                                <li>
-                                    <a href="tel:+14234246532" class="tellink">423-424-6532</a>
-                                    <i class="fa fa-phone-square text-danger" aria-hidden="true"></i>
-                                </li>
-                                <li>
-                                    <a href="mailto:mkelley@kelleypublic.com" class="tellink">mkelley@kelleypublic.com</a>
-                                    <i class="fa fa-envelope text-danger fa-1x" aria-hidden="true"></i>
-                                </li>
-                                <!-- for print version <li>mkelley.com
-                  <i class="fa fa-user  text-danger fa-1x" aria-hidden="true"></i>
-                </li> -->
-                                <li>
-                                    <a href="http://www.linkedin.com/in/mkelley" target="_blank"><i class="fa fa-linkedin-square menu-icon  text-danger" aria-hidden="true"></i></a>
-                                    <a href="http://instagram.com/iomike" target="_blank"><i class="fa  fa-instagram menu-icon fa-inverse text-danger" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/iomike" target="_blank"><i class="fa  fa-github menu-icon text-danger" aria-hidden="true"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+  <body>
+    <header>
+      <div class="section section-primary dark-primary-color ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <h1 class="text-left">Mike Kelley
+                <small class="hidden-xs">Digital Content Technologist</small>
+              </h1>
+              <p>Web technologist with 20+ years experience specializing in web production,
+                web content management, and front-end web development. Professional, creative,
+                flexible with proven analytical skills. Adapt at crafting and managing
+                award winning websites for a wide variety of clients and lines of business.</p>
             </div>
-        </div>
-        <div class="section">
-            <div class="container">
-                <div class="section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h1>Summary</h1>
-                                <p class="text-left"><img src="http://i.imgur.com/qXWLZFY.jpg" class="img-rounded pull-right" alt="Photo of Mike Kelley">Web technologist with 15+ years experience specializing in web production,
-                  web content management, and front-end web development. Professional, creative,
-                  flexible with proven analytical skills. Adapt at crafting and managing
-                  award winning websites for a wide variety of clients and lines of business.</p>
-                                <h2>Professional Qualifications</h2>
-                                <br>
-                                <!-- begin position -->
-                                <div class="row endline jobby">
-                                    <div class="col-xs-1 col-sm-1">
-                                        <i class="fa fa-2x fa-users  text-danger" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-xs-11 col-sm-11">
-                                        <div class="row">
-                                            <div class="col-sm-5 col-xs-5">
-                                                <h3>I/S Team Lead</h3>
-                                            </div>
-                                            <div class="col-sm-7 col-xs-7">
-                                                <p class="text-right">1/2016 - Present</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-6 col-sm-6">
-                                                <p>BlueCross BlueShield of Tennessee</p>
-                                            </div>
-                                            <div class="col-sm-6 col-xs-6 text-right">
-                                                <p>Chattanooga, Tennessee</p>
-                                            </div>
-                                        </div>
-                                        <p>Leads the primary digital operations &amp; web content management team
-                      focused on BCBST's web properties.<br>Manages an internal team of 6 as well as external vendors.<br>Primary SME for Web Content Management.</p>
-                                    </div>
-                                </div>
-                                <!-- end position -->
-                                
-                                <!-- begin position -->
-                                <div class="row endline jobby">
-                                    <div class="col-xs-1 col-sm-1">
-                                        <i class="fa fa-2x fa-plus-square text-danger" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-xs-11 col-sm-11">
-                                        <div class="row">
-                                            <div class="col-sm-7 col-xs-7">
-                                                <h3>Website Administrator</h3>
-                                            </div>
-                                            <div class="col-sm-5 col-xs-5">
-                                                <p class="text-right">4/2006 - 1/2016</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-6 col-sm-6">
-                                                <p>BlueCross BlueShield of Tennessee</p>
-                                            </div>
-                                            <div class="col-sm-6 col-xs-6 text-right">
-                                                <p>Chattanooga, Tennessee</p>
-                                            </div>
-                                        </div>
-                                        <p>Leadership of web content management for BCBST's web properties.<br>Project oversight for front-end development.<br>Leads an in-house team of 5 designers and developers and directs the work
-                      of multiple vendor teams</p>
-                                    </div>
-                                </div>
-                                <!-- end position -->
-                                <!-- begin position -->
-                                <div class="row endline jobby">
-                                    <div class="col-xs-1 col-sm-1">
-                                        <i class="fa fa-2x fa-apple text-danger" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-xs-11 col-sm-11">
-                                        <div class="row">
-                                            <div class="col-sm-8 col-xs-8">
-                                                <h3>PrePress IT Administrator</h3>
-                                            </div>
-                                            <div class="col-sm-4 col-xs-4">
-                                                <p class="text-right">6/2004 - 3/2006</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-6 col-sm-6">
-                                                <p>Marketing Alliance Group</p>
-                                            </div>
-                                            <div class="col-sm-6 col-xs-6 text-right">
-                                                <p>Dalton, Georgia</p>
-                                            </div>
-                                        </div>
-                                        <p>Technical support &amp; web design for an Apple-based art department.<br>Designed the front-end web design for Shaw's national campaigns for their
-                      Kathy Ireland product.</p>
-                                    </div>
-                                </div>
-                                <!-- end position -->
-                                <!-- begin position -->
-                                <div class="row endline jobby">
-                                    <div class="col-xs-1 col-sm-1">
-                                        <i class="fa fa-2x fa-heartbeat  text-danger" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-xs-11 col-sm-11">
-                                        <div class="row">
-                                            <div class="col-sm-8 col-xs-8">
-                                                <h3>Web Technology Specialist</h3>
-                                            </div>
-                                            <div class="col-sm-4 col-xs-4">
-                                                <p class="text-right">2/2002 - 6/2004</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-6 col-sm-6">
-                                                <p>Erlanger Health System</p>
-                                            </div>
-                                            <div class="col-sm-6 col-xs-6 text-right">
-                                                <p>Chattanooga, Tennessee</p>
-                                            </div>
-                                        </div>
-                                        <p>Managed content, design, and technology direction for erlanger.org. Consolidated
-                      Erlanger's 6 consumer websites into a central domain for information and
-                      content management.</p>
-                                    </div>
-                                </div>
-                                <!-- end position -->
-                                <!-- begin position -->
-                                <div class="row endline jobby">
-                                    <div class="col-xs-1 col-sm-1">
-                                        <i class="fa fa-2x fa-newspaper-o text-danger" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-xs-11 col-sm-11">
-                                        <div class="row">
-                                            <div class="col-sm-8 col-xs-8">
-                                                <h3>Internet/Media Specialist</h3>
-                                            </div>
-                                            <div class="col-sm-4 col-xs-4">
-                                                <p class="text-right">1/2000 - 1/2003</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-6 col-sm-6">
-                                                <p>Hutcheson Medical Center</p>
-                                            </div>
-                                            <div class="col-sm-6 col-xs-6 text-right">
-                                                <p>Fort Oglethorpe, Georgia</p>
-                                            </div>
-                                        </div>
-                                        <p>Management of the hospital's web design &amp; development for internal
-                      &amp; external communications.<br>Media buying including budgeting for all print, TV, &amp; radio needs
-                      of the institution.</p>
-                                    </div>
-                                </div>
-                                <!-- end position -->
-                                <!-- begin position -->
-                                <div class="row endline jobby">
-                                    <div class="col-xs-1 col-sm-1">
-                                        <i class="fa fa-2x fa-server text-danger" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-xs-11 col-sm-11">
-                                        <div class="row">
-                                            <div class="col-sm-8 col-xs-8">
-                                                <h3>Network Administrator</h3>
-                                            </div>
-                                            <div class="col-sm-4 col-xs-4">
-                                                <p class="text-right">6/1994 - 1/2000</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-6 col-sm-6">
-                                                <p>Hutcheson Medical Center</p>
-                                            </div>
-                                            <div class="col-sm-6 col-xs-6 text-right">
-                                                <p>Fort Oglethorpe, Georgia</p>
-                                            </div>
-                                        </div>
-                                        <p>Responsible for the management of 250+ Windows, Novell, and UNIX desktops
-                      and servers. Had a small staff who worked on projects and who were assigned
-                      tasks based on help desk calls.</p>
-                                    </div>
-                                </div>
-                                <!-- end position -->
-                            </div>
-                            <div class="col-md-6">
-                                <h2>Work Experience</h2>
-                                <br>
-                                <!--begin-->
-                                <div class="row">
-                                    <div class="col-sm-4 text-right">
-                                        <p><strong>Front-end Web Design</strong></p>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <div class="progress">
-                                            <div class="active progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">20+ Years Experience</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end-->
-                                <!--begin-->
-                                <div class="row">
-                                    <div class="col-sm-4 text-right">
-                                        <p><b>Web Content Management</b></p>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <div class="progress">
-                                            <div class="active progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90" style="width:90%">16+ Years Experience</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end-->
-                                <!--begin-->
-                                <div class="row">
-                                    <div class="col-sm-4 text-right">
-                                        <p><strong>Project Management</strong></p>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <div class="progress">
-                                            <div class="active progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90" style="width:90%">16+ Years Experience</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end-->
-                                <!--begin-->
-                                <div class="row">
-                                    <div class="col-sm-4 text-right">
-                                        <p><strong>Server Administration</strong></p>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <div class="progress">
-                                            <div class="active progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">20+ Years Experience</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end-->
-                                <!--begin-->
-                                <div class="row">
-                                    <div class="col-sm-4 text-right">
-                                        <p><strong>Music Industry</strong></p>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <div class="progress">
-                                            <div class="active progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">20+ Years Experience</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end-->
-                                <!--begin-->
-                                <div class="row">
-                                    <div class="col-sm-4 text-right">
-                                        <p><strong>Health Care Technology</strong></p>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <div class="progress">
-                                            <div class="active progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">20+ Years Experience</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end-->
-                                <h2>Additional Skills</h2>
-                                <span class="label label-primary">Bootstrap</span>
-                                <span class="label label-primary">Foundation</span>
-                                <span class="label label-primary">Graphic Design</span>
-                                <span class="label label-primary">CSS3</span>
-                                <span class="label label-primary">HTML5</span>
-                                <span class="label label-primary">Web Usability</span>
-                                <span class="label label-primary">Social Media Management</span>
-                                <span class="label label-primary">Teamsite</span>
-                                <span class="label label-primary">IBM WCM</span>
-                                <span class="label label-primary">Jekyll</span>
-                                <span class="label label-primary">WordPress</span>
-                                <span class="label label-primary">Sharepoint</span>
-                                <span class="label label-primary">Drupal</span>
-                                <h2>Achievements</h2>
-                                <p>Web Marketing Association Outstanding Web Site WebAward 2012</p>
-                                <p>Web Marketing Association WebAward for Outstanding Achievement in Web
-                  Development 2009, 2008, 2007, 2006</p>
-                                <p>IAC Outstanding Website award 2014</p>
-                                <h2>Education</h2>
-                      
-                                <!-- ed -->
-                                <div class="jobby endline">
-                                    <div class="row">
-                                        <div class="col-sm-7 col-xs-7">
-                                            <h4>Chattanooga State</h4>
-                                        </div>
-                                        <div class="col-sm-5 col-xs-5">
-                                            <p class="text-right">Spring 1996 - Fall 1998</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-6 col-sm-6">
-                                            <p>Chattanooga, Tennessee</p>
-                                        </div>
-                                        <div class="col-sm-6 col-xs-6 text-right">
-                                            <p>Marketing</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end ed -->
-                                <!-- ed -->
-                                <div class="jobby endline">
-                                    <div class="row">
-                                        <div class="col-sm-7 col-xs-7">
-                                            <h4>Dalton State College</h4>
-                                        </div>
-                                        <div class="col-sm-5 col-xs-5">
-                                            <p class="text-right">Spring 1993 - Winter 1995</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-6 col-sm-6">
-                                            <p>Dalton, Georgia</p>
-                                        </div>
-                                        <div class="col-sm-6 col-xs-6 text-right">
-                                            <p>Business Administration</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end ed -->
-                                <h2>Interests</h2>
-                                <span class="label label-primary">Playing Drums &amp; Percussion</span>
-                                <span class="label label-primary">Traveling</span>
-                                <span class="label label-primary">Simple Cooking</span>
-                                <span class="label label-primary">Reading Biographies</span>
-                                <span class="label label-primary">Volunteer Work</span>
-                                <span class="label label-primary">Open Source Projects</span>
-                                <span class="label label-primary">Web Technology</span>
-                                
-                               <h2>Portfolio</h2>
-                                <div class="row">
-                                    <div class="col-xs-4 col-sm-4">
-                                        <div class="modal fade pg-show-modal" id="modal4" tabindex="-1" role="dialog" aria-hidden="true"> 
-                                            <div class="modal-dialog"> 
-                                                <div class="modal-content"> 
-                                                    <div class="modal-header"> 
-                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                                                         
-                                                        <h4 class="modal-title">A Night to Remember Examples</h4> 
-                                                    </div>                                                     
-                                                    <div class="modal-body"> 
-                                                        <h5>
-                                                         Sponsorship Board</h5> 
-                                                        <p><img alt="A Night to Remember sponsor board" src="https://lh3.googleusercontent.com/t--vrQk4sCuS7qfsE5cKfcCXdxXkvIPK35Q3qNVqLnkzsBFe6HGyti0lV2_YJaZkZqgf72zYDpotcrd6TWenskRHe-AuEQ4JKT86vELAoeB3obg0LBx2ozgWCT1uEaUtDNQlJRDpQGLD47an8s-abQic5lipYSFpAhU7c-mxFbJ0yNWQxrjfKg2QzaPJU8SNNYpAPLFQ0eDIo3aGBeDQaRGaNAVJto5wYo2CY1i1akZpDID5Wdm1icf1WT7Fn9J1d59g-gR--mcoth8PT-kE0_ZhrbdJgMDGoXVYgZrVoBbfysdIps4AwW6TVrGbtp4Edw6SQTMnAj14pTL7_VvQhe9ov6wYj_7RN3glyPQ7IsQo6AGZZsTHRJsCa5zI8krlICPpsBH7ktH4GgnnZyQT0uHUYh7C45Q80i6MuLo9Kn0QyxRd5kkR0BkeCArMueBg0nYRGq0Icz6ZAGzkP1VFXlnrGh0K3kkQfFCKisKGFBYF-dBso3ZcMUYOkeeqWRP51jQ2J0K6L46c8SBR1eROm9-KVY0JNXKR_EV58JPcyJ2Rkty7qJr6V29TY7xBrZd7Mk1q7EPYI2qC3g3G3pil4iuV7Ud3456i=w508-h680-no" class="img-responsive" /></p> 
-                                                        <h5>
-                                                            2012 Program</h5>
-                                                        <p><img alt="A Night to Remember program" src="https://lh3.googleusercontent.com/fnwPQMipO3ZeomW-Jgl53nCHkjo3MJacqtd81Xerzy5Par81MxuhCve_gWrAluqkYlZFvyABfs2M8ZVt-cI19ATeYTV-mkVhwydq9xj3TFPZ-DC1x7F9VbSpmS9m1MOo7ZcFFc52SvsLuZvMeRl1YuwAfLDy4YCQdX6KWiHob2eDlUPfnZ9wHHW7XDqmUbbskL3TGIl8I_xMQYav5iYCyeg7t6jHupQaZ3J2LC4tBvivqGr1A5TLDhkIye7soc7W39icp9WN1viFtAIVdF8YFVTYwKbNTEdnhgEZAKabIT_yUG2Q_mJsNBuQ88l8H0jkyvLbhkoTQbdgTubIWr5gF-pPl0RR4IJcil-jubQmXV6VoTVigoNCS7I2P6XCNUK1hnoyJ4ZK6c-ZGIxWoJUlFnQeFAvmKdrdxUJ8M1hVv-ispxy0YblHAAOU0DlI0O50s46ALbt-1qPX86LCpHYiB3mwA1xUs9JyduxtaW3gtIDso8P1FOfGChg86hWos75qzhZ3rCKIAg-59IyrO2SOSA1LpLCZzdYWvzqg4NsW4GvY-qarCcVAVL39PfPk5CpfgpxjxI1MFOE-LaCQmqnKYp7wU-9T9iA=s612-no" class="img-responsive" < p>
-                                                        <h5>
-                                                            2011 Program</h5>
-                                                        <p><img alt="A Night to Remember program" src="https://lh3.googleusercontent.com/kHreMSmVWMTxwWODHSuhTf-z13sIwhIQ9t9VQqDJJLDf796conAgGwoXfKRspoUPs8wcv9wKzTMagvtQZxxDAcM-Jvlv3j3s8r8dANl68Hec8s8Xmvc3NdtX71EEs0MHNdRJ0EBf1_KcpezmZoUGE1naajMOFEcFYcu3_I8wRitJUuGdQSaKkYZYyuuSZntlqQ61uzdV51ts0iUjVm-dYj46Gmb5jx3f9RVTiKO8x5uD4coX-bqk367jHvZTSKdcTQtKcEGuGieJ82-N2H0KEMbwFhQMOVn0-blCkb4YXVANKK0Ihy812bVaLK5GC0ByZilG3ZSsN1f-_dL6AKxy424zcGxblvYBs1tyxAONwfn_O4vEZbKzqn5Z25Ww8bXdEdHXsAwda350iKT6dKteHvsiuYKH1Xuqnc7l-Y3Ad-aCfYa7F5B3az3Up9ICcrJzA79iw1b3uLjMei2d02YFrlXTdpVaKY_tngwALjT05FmTjAfvCtc6wS094nO4jf68_qFOi-p3JsOVRxGSFY-YEuJ9yuewRra0EAvBI64nA--I2D2L670ZusaBxXQF3LeglyYg4j4gU-S5wj9NfRsy59NfFbOGrbDw=w357-h680-no" class="img-responsive" < p>
-                                                        <h5>
-                                                           2010 Program</h5>
-                                                        <p><img alt="A Night to Remember program" src="https://lh3.googleusercontent.com/lXIvxvJKScp9QY0PVciB63bEZo2iDXXEuFH9KSkCwSYjtqz467Hrijd3qmndNw23tJcNyuW1T_YXHwFtkC7XLwfsWyHnw3DcozcYWNOX3Lc4_rCqABXphIosCbY_okPMkP_ffcOwpc5G2V5HhFhcUxxdhLP6fMfKocd2ZoQVxNe-6tI-efRUa52AIP05xgYBghCpljK3hwQHUqGguYL3apSBgnG-anMzk1QBreFePpJGVfx6tninjQGM1ah9rL7EAIRjPYSVGkvyGhOHJPEnhf9pb5ftjh4xoMwH8Wu86TcAulyGTLgKRHbJZoSssAZRqLfuPjLzFQYWKCBDAFLle1NB_rVZ5zKkHF_Cy0K1H3Z5yCh98YUElib9uaIWo4eFmpwZqIf2gJCiEhnNadICFu-l9dsSxqkKbzPt2c66yIE8DFGFDjmhGv-RQ0GOtT7C6O9dnqTKAt66aNudFo39YCZJMI5vN-S0pIiLMmuDdmGULTLk5JZaqDyWmmZr67_wkPo89TElgGLOF5eBS2XVT1SI1ll67x8M45LeC3qtCsrXry7LY57uVQFSXFLLOH488HDYCFqh155qzXk_vh7miFRepaEmMYsw=w508-h680-no" class="img-responsive" < p> 
-                                                        <h5>
-                                                           Event Signage</h5>
-                                                        <p><img alt="A Night to Remember" src="https://lh3.googleusercontent.com/JLS0QgFYK4NsMB2P3IcMI092tRlkXAQNBH-N-UpOEPxQQXB0EdRRYvAAlfzgCkZUlK11Iu5NC1uZF-7_23HUbxI361pvHSTdcwSu0QQdTIKweAcu7M21wo-HLm8yQWAAa-nU7Z1oT49LOQTrK_p-7NdqzKFSzYGisYBhbrB29t70Dp944SbU8Q89k66FLI85SF6aH_s-cwep9n82n3lAzdJIzpUqyJSf7DCEPsGSnFwzaZIBfq344GyJ-MtSIdZlc5rvB4mXPQ6cGhAelQgONHyiz51J276syNa9x4l-Zy00jgyrL5PJV_3B4qRmqIwSqzx-PD_jbZeJMHpuHmYWY5zAGUZqis-Mso9wrXHP7hOBQR1LV55NoR2I2cWCjSIG_RCeyr3XhpvhTaMC3Jfaw9u47Q20uYIGCtLG9CC-bbsD9nzQvWnyYN9PJy4GI0UjPaq3dKhXJP25CHcVrzHnJgunZdRLvj5HXa-zzUAGihDuBOIXf4hcnAMViiq0TCq8dY5EkgzlcUxeq1UVi6UpZVbjHXglMy-L3f9o7Ilc6UdfUPp0BPWsYteHr3pQNSQDEcuQR8DWUi9RHafqDqe64iBHy-83StpG=w508-h680-no" < p>
-                                                    </div>                                                     
-                                                    <div class="modal-footer"> 
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                                         
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>
-                                        <p><a href="#" data-toggle="modal" data-target="#modal4">
-                                                <img alt="Find a Doctor" src="https://lh3.googleusercontent.com/lXIvxvJKScp9QY0PVciB63bEZo2iDXXEuFH9KSkCwSYjtqz467Hrijd3qmndNw23tJcNyuW1T_YXHwFtkC7XLwfsWyHnw3DcozcYWNOX3Lc4_rCqABXphIosCbY_okPMkP_ffcOwpc5G2V5HhFhcUxxdhLP6fMfKocd2ZoQVxNe-6tI-efRUa52AIP05xgYBghCpljK3hwQHUqGguYL3apSBgnG-anMzk1QBreFePpJGVfx6tninjQGM1ah9rL7EAIRjPYSVGkvyGhOHJPEnhf9pb5ftjh4xoMwH8Wu86TcAulyGTLgKRHbJZoSssAZRqLfuPjLzFQYWKCBDAFLle1NB_rVZ5zKkHF_Cy0K1H3Z5yCh98YUElib9uaIWo4eFmpwZqIf2gJCiEhnNadICFu-l9dsSxqkKbzPt2c66yIE8DFGFDjmhGv-RQ0GOtT7C6O9dnqTKAt66aNudFo39YCZJMI5vN-S0pIiLMmuDdmGULTLk5JZaqDyWmmZr67_wkPo89TElgGLOF5eBS2XVT1SI1ll67x8M45LeC3qtCsrXry7LY57uVQFSXFLLOH488HDYCFqh155qzXk_vh7miFRepaEmMYsw=w508-h680-no" class="img-responsive img-thumbnail" />
-                                            </a></p>
-                                    </div>
-                                    <div class="col-xs-4 col-sm-4">
-                                        <div class="modal fade pg-show-modal" id="modal5" tabindex="-1" role="dialog" aria-hidden="true"> 
-                                            <div class="modal-dialog"> 
-                                                <div class="modal-content"> 
-                                                    <div class="modal-header"> 
-                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                                                         
-                                                        <h4 class="modal-title">A Night to Remember</h4> 
-                                                    </div>                                                     
-                                                    <div class="modal-body"> 
-                                                        <h5>
-                                                        CD Jacket and Disc Design  </h5>
-                                                        <p><img alt="Nothing and the Nobodies" src="https://lh3.googleusercontent.com/yo5lw1DfYmkzTmFCqLyQuF9vTm6LvzeZcZTkH9uMSX7PnQpTydqWtVRL14bdZMeUnPY-fY1K_NOw-0NT8aH-xyvt6jiEOanyUpbarS5pYpEo5v64Hfbb-Pchpj7C2tODtVgdPKHzgbjZgMfNINcejizWykPirAuN7wzIvZOtKNeoUrWr2LuUzkLeCS5WzA_cTu7YjvXoTCnGDX2b1uQfNajauW0Q-EQq2BTeKsE4O8ZFpNp_8A4jQgJSYqHVH5aT2ggPBxv8mjDZ6dS1pVxT2D2VzQZ0QMlX85MnGhVggmKFRGhU5iQ9GYAXIO4kA4fSWpCw_vQraJqaM1ygaav2mfxEq2xOPlyXxoWREpyu7FYg1yTXF5OOkWa8SKIU9QdgIYz34QWlM0QaQ-f6UUEMVZfDtKpylgzGwahjcElJL4QGhauhcy0pxcb5bIozj_Fak0NNgJtEpDvslklx8dnLwgs9ZXLqHjYXyZRibmjZ1nDKi1NtqO0k4q5b2SoYjfMs82CeLpzIS_7EfOgF5UTsGrbs897t6eJa0y7dxaqVvAyc1MBmDWGZ3RN55k7KCuNrSqV3ipIoMYOMZfGiykmv58JqamzxQeCJ=w848-h634-no" class="img-responsive" /></p> 
-                                                        <h5>
-                                                           Logo </h5>
-                                                        <p><img alt="A Night to Remember" src="https://lh3.googleusercontent.com/ymjLSuBgfvF_g1uEU36YV_K3x_H89TZYOB56m_meACUzTunqkkXydKm1cb5_xrBR59U-PD4W0VrzJe6YMakgiP8sLpoEilhJv1-ojC2AtRvyEUskdh0E6kbxrl0A83CYIawnGCZsrUDNwZJHeNGIW6f35OIhi_OzX5uqJbgFlG1eUpIvyjY4vLxWXt4jogFBUipANx7a9gz_xD3B4VQxs2yvCQ6FuH98QQwu7OUBk6Ti62TQmye9TObwdabbXR6pjojAk_uVhAMCuYRNhstuF6qaBcOUrKNVswfbYwy-j4uJfS2Kuz03iGQVSRbHd0HcFz8yzsfltPT4gC4Cc5ofgTDiBl-WlMMFXp-8id4rt2yeQatQQoyJgRL5xHiT44AmEPlFzj6PfbDZAykbHGfjNHc7lDrxYh6jjeYzVXnsMlhb2_Lz_d-Ac1LWBN-ZaPk9oxynq4rKZb5XBNVyvZtN2z-1CAzH6CGjDuNtA5jqWLscyMUH6bML2-vFQIQHMmqWGjyewkPPkdRTBsZz1jlnNBSGRzLslHGhN8VxUXawS_WDvZY6BgZCIcXpEM2ZQFUHTKzLJWyWUOVjyqy0CCwWwDbuBBiC1Obo=w848-h634-no" class="img-responsive" /></p>
-                                                    </div>                                                     
-                                                    <div class="modal-footer"> 
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                                         
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>
-                                        <p><a href="#" data-toggle="modal" data-target="#modal5">
-                                                <img alt="Nothing and the Nobodies" src="https://lh3.googleusercontent.com/ymjLSuBgfvF_g1uEU36YV_K3x_H89TZYOB56m_meACUzTunqkkXydKm1cb5_xrBR59U-PD4W0VrzJe6YMakgiP8sLpoEilhJv1-ojC2AtRvyEUskdh0E6kbxrl0A83CYIawnGCZsrUDNwZJHeNGIW6f35OIhi_OzX5uqJbgFlG1eUpIvyjY4vLxWXt4jogFBUipANx7a9gz_xD3B4VQxs2yvCQ6FuH98QQwu7OUBk6Ti62TQmye9TObwdabbXR6pjojAk_uVhAMCuYRNhstuF6qaBcOUrKNVswfbYwy-j4uJfS2Kuz03iGQVSRbHd0HcFz8yzsfltPT4gC4Cc5ofgTDiBl-WlMMFXp-8id4rt2yeQatQQoyJgRL5xHiT44AmEPlFzj6PfbDZAykbHGfjNHc7lDrxYh6jjeYzVXnsMlhb2_Lz_d-Ac1LWBN-ZaPk9oxynq4rKZb5XBNVyvZtN2z-1CAzH6CGjDuNtA5jqWLscyMUH6bML2-vFQIQHMmqWGjyewkPPkdRTBsZz1jlnNBSGRzLslHGhN8VxUXawS_WDvZY6BgZCIcXpEM2ZQFUHTKzLJWyWUOVjyqy0CCwWwDbuBBiC1Obo=w848-h634-no" class="img-responsive img-thumbnail" />
-                                            </a></p>
-                                    </div>
-                                    <div class="col-xs-4 col-sm-4">
-                                        <div class="modal fade pg-show-modal" id="modal3" tabindex="-1" role="dialog" aria-hidden="true"> 
-                                            <div class="modal-dialog"> 
-                                                <div class="modal-content"> 
-                                                    <div class="modal-header"> 
-                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                                                         
-                                                        <h4 class="modal-title">Erlanger Health System print advertising</h4> 
-                                                    </div>                                                     
-                                                    <div class="modal-body"> 
-                                                        <h5>
-                                                            Erlanger Workforce Corporate Health "Firefighters" ad</h5>
-                                                        <p><img alt="Erlanger.org" src="https://lh3.googleusercontent.com/vggIJEaRAZixJJy5m9mzf0T-D_amb60wC6zNfID4fleOKnHH8uPgoXqglpDAHicgb8kWcHjLhs6cAVz8fs-he1v6C-Ws3PZvjh0oh-nxoKUce5xsAv4i97TgoM3XU8RgQbKvuYW4iXBeP6XcwZyuWfvg7nlpGhL5iLlyX2ehXOKBtMNbrMCAgVtMk6EHpzNoBoKXIBK6TD5ItFWSrit916jJGSshNkcz5Hm7C2V2LyUXt9praqG-hzMTqXxaLD8gU4VNsVElh6p-2PpvO5cwPPEdRSvetVeltdlygASNdqPRz0VO2ZcpTna_cxT3K3nHE6O4_ckxxxgFj7nJWkKETWBmncCx8tIDEO_rVDGqsqSZT-ZyODQB0yD1m1T7KfTJRv9E8Q75HvSSU9YiBWARL8coYowO8dYIEXcc_dLjFoQFDrJrQ28IeIRrs9_YgrBFdMvx_Q_aJ4RHJepvi7L3rIquRcU6xHhpvNsEicPq6v8H9Zo57oV7DVLlV3a5kf2b9_geOSHthWXxlnOz1794vl8WkOL9yUrvwC4EEmm9lOuNe40vwuXAxjD_0GjWLuKcuLJgbpLjaYM4ZiYbnE9O_BnYfv6xXwFs=w526-h680-no" class="img-responsive" /></p> 
-                                                        <h5>
-                                                  Erlanger Chest Pain ad        </h5>
-                                                        <p><img alt="Erlanger Check Pain ad" src="https://lh3.googleusercontent.com/coFnvqTVxK53JnoY1CPeMN-6kepby04aIIEUJ1K2VADJ40qrkT1fXCNhextQi9-HYgh0jt9Rdb2QmJOdiit3NhBIsT1FxxYLDDAHUcKIbLtl4AN88j6_6yOUxLnGAgsdZMiTe-Rtmeyc89qaV608vUUpCq0fatgvKRwKfUHmBe3Ew0keTMT5s9OLlmSfSvcLzrYkBuc7DAFl_sb67vuaik96vtj_pFzUYlO5Ie893kLtHOhHDSBRG3IxUyyhsaiqY7g4IKaKmIUGJRhidzG6tsoHc7xmbaprAq44BDvuSpgmRwgrJRPYUqIt_cjhekVImG3yd-uV9GP6QlVbj5uAGifFkNn7uh3xVXdmuBhHftN_ZfaVR0Il2njw_W0db09DB0QCJXuolXH5NPEr5kPCppW61MNoaiF0l8_D8pFoi8UEV3UhN7RYm_rz1phrhRvFwDNWMdk7UsXTbzhsQ-raTRmvhL_CAaWfcJnYFoFKccpAuU-zsDoscNVBNP9QZ1Ey3kh53iHE_p7Yej5VMiN5kwqQXYaZYXYfRL8V-axR5xdzKo0BhJ0Ot-MNuKQvWGMAZRNwzhkABhvZiN_p_7GyM_xrPdy3tIwj=w400-h370-no" class="img-responsive" /></p> 
-                                                        <h5>
-                                                  Erlanger Hypertension ad        </h5>
-                                                        <p><img alt="Erlanger Check Pain ad" src="https://lh3.googleusercontent.com/JCui_B_wi64sDhR5pnC0WQTv7j_IHmRf2D07xFlXIhwb3AavyEvYsrZlM85LdcU6tZCmjDRPe4-MqtUS05xQtus3hoxX9_U3AAJmJklerRmD962qg5re8rqPFVeTqjJWge2xs_sat43bqc13Y4XriI8eU3AT1BWQcl7QPBE1LJrD9vd3x2njK2PWCq-ZcQ0SfTY07zCkIZqrx1GNSvYP0Dt6eiCkNRm_RO3FyYRHGIgZNq88FqJtsVtcf6BNzoAZvj4yOJqAeYiyzgkxhrzI0Sq8hpQifbV3HEF6uFTfJSGZqbLIL8QlbctvoBNDT1vzVT1M0THHj3PdU5CxaUSAaFYMysOrg17VEi2vZr7K95ogvzRAu81V3FZR71G19aggIQlRc-lK8mN8fu_PV16LrE3ph3xKFM8iJTEAzgwBqMf0mZOYkIfy8steo7mMXhrQ85G130fF6hkYfVrSobPHG6cavWGlu__E_E0Ny3Nbil910N8aSkttzH21mEdMUPDVR4hX_NcMajc6YNE2SPnFDPOqu0tlrMuJ9ubrMEE92O7txsDUo9aTUcSMYNdlcpozmdIOk9KmBq2vUvpP-QG-jihzE6pacbhy=w400-h234-no" class="img-responsive" /></p> 
-                                                    </div>                                                     
-                                                    <div class="modal-footer"> 
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                                         
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>
-                                        <p><a href="#" data-toggle="modal" data-target="#modal3">
-                                                <img alt="Erlanger print ads" src="https://lh3.googleusercontent.com/JCui_B_wi64sDhR5pnC0WQTv7j_IHmRf2D07xFlXIhwb3AavyEvYsrZlM85LdcU6tZCmjDRPe4-MqtUS05xQtus3hoxX9_U3AAJmJklerRmD962qg5re8rqPFVeTqjJWge2xs_sat43bqc13Y4XriI8eU3AT1BWQcl7QPBE1LJrD9vd3x2njK2PWCq-ZcQ0SfTY07zCkIZqrx1GNSvYP0Dt6eiCkNRm_RO3FyYRHGIgZNq88FqJtsVtcf6BNzoAZvj4yOJqAeYiyzgkxhrzI0Sq8hpQifbV3HEF6uFTfJSGZqbLIL8QlbctvoBNDT1vzVT1M0THHj3PdU5CxaUSAaFYMysOrg17VEi2vZr7K95ogvzRAu81V3FZR71G19aggIQlRc-lK8mN8fu_PV16LrE3ph3xKFM8iJTEAzgwBqMf0mZOYkIfy8steo7mMXhrQ85G130fF6hkYfVrSobPHG6cavWGlu__E_E0Ny3Nbil910N8aSkttzH21mEdMUPDVR4hX_NcMajc6YNE2SPnFDPOqu0tlrMuJ9ubrMEE92O7txsDUo9aTUcSMYNdlcpozmdIOk9KmBq2vUvpP-QG-jihzE6pacbhy=w400-h234-no" class="img-responsive img-thumbnail" />
-                                            </a></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-4 col-sm-4">
-                                        <div class="modal fade pg-show-modal" id="modal1" tabindex="-1" role="dialog" aria-hidden="true"> 
-                                            <div class="modal-dialog"> 
-                                                <div class="modal-content"> 
-                                                    <div class="modal-header"> 
-                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                                                         
-                                                        <h4 class="modal-title">Find a Doctor (in use from 2006 through 2013)</h4> 
-                                                    </div>                                                     
-                                                    <div class="modal-body"> 
-                                                        <h5>
-                                                            Advanced search form</h5>
-                                                        <p><img alt="Find a Doctor" src="http://i.imgur.com/XWjDQ.jpg" class="img-responsive" /></p> 
-                                                    </div>                                                     
-                                                    <div class="modal-footer"> 
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                                         
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>
-                                        <p><a href="#" data-toggle="modal" data-target="#modal1">
-                                                <img alt="Find a Doctor" src="http://i.imgur.com/XWjDQ.jpg" class="img-responsive img-thumbnail" />
-                                            </a></p>
-                                    </div>
-                                    <div class="col-xs-4 col-sm-4">
-                                        <div class="modal fade pg-show-modal" id="modal2" tabindex="-1" role="dialog" aria-hidden="true"> 
-                                            <div class="modal-dialog"> 
-                                                <div class="modal-content"> 
-                                                    <div class="modal-header"> 
-                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                                                         
-                                                        <h4 class="modal-title">My BlueCross Contact (in use from 2015-Present)</h4> 
-                                                    </div>                                                     
-                                                    <div class="modal-body"> 
-                                                        <h5>
-                                                           Initial screen</h5>
-                                                        <p><img alt="My BlueCross Contact" src="http://i.imgur.com/1gDp8Lg.png" class="img-responsive" /><br /><h5>
-                                                               Post selection screen. Original concept included dynamic elements which would negate the accordions</h5><img alt="My BlueCross Contact selection" src="http://i.imgur.com/N1V9A48.png" class="img-responsive" /></p> 
-                                                    </div>                                                     
-                                                    <div class="modal-footer"> 
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                                         
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>
-                                        <p><a href="#" data-toggle="modal" data-target="#modal2">
-                                                <img alt="My BlueCross Contact" src="http://i.imgur.com/1gDp8Lg.png" class="img-responsive img-thumbnail" />
-                                            </a></p>
-                                    </div>
-                                    <div class="col-xs-4 col-sm-4">
-                                        <div class="modal fade pg-show-modal" id="modal3" tabindex="-1" role="dialog" aria-hidden="true"> 
-                                            <div class="modal-dialog"> 
-                                                <div class="modal-content"> 
-                                                    <div class="modal-header"> 
-                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                                                         
-                                                        <h4 class="modal-title">Erlanger Health System erlanger.org (in use from late 2002-2005)</h4> 
-                                                    </div>                                                     
-                                                    <div class="modal-body"> 
-                                                        <p><img alt="Erlanger.org" src="http://i.imgur.com/jWeZ9.jpg" class="img-responsive" /></p> 
-                                                    </div>                                                     
-                                                    <div class="modal-footer"> 
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>                                                         
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>
-                                        <p><a href="#" data-toggle="modal" data-target="#modal3">
-                                                <img alt="Erlanger.org" src="http://i.imgur.com/jWeZ9.jpg" class="img-responsive img-thumbnail" />
-                                            </a></p>
-                                    </div>
-                                </div>  <!-- end -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-4 text-left">
+              <p>
+                <img src="http://i.imgur.com/qXWLZFY.jpg" class="center-block img-circle text-center"
+                alt="Photo of Mike Kelley">
+              </p>
             </div>
+          </div>
         </div>
-    </body>
-</script>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 contact primary-color">
+          <ul class="lead list-inline text-center">
+            <li>
+              <a href="tel:+14234246532" class="tellink"><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;423-424-6532</a>
+            </li>
+            <li>
+              <a href="mailto:mkelley@kelleypublic.com" class="tellink"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;mkelley@kelleypublic.com</a>
+            </li>
+            <li>
+              <a href="http://linkedin.com/in/mkelley" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp;linkedin.com/in/mkelley</a>
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/place/Chattanooga,+TN/@35.0979732,-85.5188784,10z/data=!3m1!4b1!4m5!3m4!1s0x886060408a83e785:0x2471261f898728aa!8m2!3d35.0456297!4d-85.3096801"
+              target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Chattanooga, Tennessee</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container ">
+      <div class="row ">
+        <div class="col-md-6 ">
+          <h2>Professional Qualifications</h2>
+          <!-- begin position -->
+          <div class="row endline jobby ">
+            <div class="col-xs-1 col-sm-1 ">
+              <i class="fa fa-2x fa-users " aria-hidden="true "></i>
+            </div>
+            <div class="col-xs-11 col-sm-11 ">
+              <div class="row ">
+                <div class="col-sm-5 col-xs-5 ">
+                  <h3>I/S Team Lead</h3>
+                </div>
+                <div class="col-sm-7 col-xs-7 ">
+                  <p class="text-right ">1/2016 - Present</p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-xs-6 col-sm-6 ">
+                  <p>BlueCross BlueShield of Tennessee</p>
+                </div>
+                <div class="col-sm-6 col-xs-6 text-right ">
+                  <p>Chattanooga, Tennessee</p>
+                </div>
+              </div>
+              <p>Leads the primary digital operations &amp; web content management team
+                focused on BCBST's web properties.
+                <br>Manages an internal team of 6 as well as external vendors.
+                <br>Primary SME for Web Content Management.</p>
+            </div>
+          </div>
+          <!-- end position -->
+          <!-- begin position -->
+          <div class="row endline jobby ">
+            <div class="col-xs-1 col-sm-1 ">
+              <i class="fa fa-2x fa-plus-square " aria-hidden="true "></i>
+            </div>
+            <div class="col-xs-11 col-sm-11 ">
+              <div class="row ">
+                <div class="col-sm-7 col-xs-7 ">
+                  <h3>Website Administrator</h3>
+                </div>
+                <div class="col-sm-5 col-xs-5 ">
+                  <p class="text-right ">4/2006 - 1/2016</p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-xs-6 col-sm-6 ">
+                  <p>BlueCross BlueShield of Tennessee</p>
+                </div>
+                <div class="col-sm-6 col-xs-6 text-right ">
+                  <p>Chattanooga, Tennessee</p>
+                </div>
+              </div>
+              <p>Leadership of web content management for BCBST's web properties.
+                <br>Project oversight for front-end development.
+                <br>Leads an in-house team of 5 designers and developers and directs the work
+                of multiple vendor teams</p>
+            </div>
+          </div>
+          <!-- end position -->
+          <!-- begin position -->
+          <div class="row endline jobby ">
+            <div class="col-xs-1 col-sm-1 ">
+              <i class="fa fa-2x fa-apple " aria-hidden="true "></i>
+            </div>
+            <div class="col-xs-11 col-sm-11 ">
+              <div class="row ">
+                <div class="col-sm-8 col-xs-8 ">
+                  <h3>PrePress IT Administrator</h3>
+                </div>
+                <div class="col-sm-4 col-xs-4 ">
+                  <p class="text-right ">6/2004 - 3/2006</p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-xs-6 col-sm-6 ">
+                  <p>Marketing Alliance Group</p>
+                </div>
+                <div class="col-sm-6 col-xs-6 text-right ">
+                  <p>Dalton, Georgia</p>
+                </div>
+              </div>
+              <p>Technical support &amp; web design for an Apple-based art department.
+                <br>Designed the front-end web design for Shaw's national campaigns for their
+                Kathy Ireland product.</p>
+            </div>
+          </div>
+          <!-- end position -->
+          <!-- begin position -->
+          <div class="row endline jobby ">
+            <div class="col-xs-1 col-sm-1 ">
+              <i class="fa fa-2x fa-heartbeat
+      " aria-hidden="true "></i>
+            </div>
+            <div class="col-xs-11 col-sm-11 ">
+              <div class="row ">
+                <div class="col-sm-8 col-xs-8 ">
+                  <h3>Web Technology Specialist</h3>
+                </div>
+                <div class="col-sm-4 col-xs-4 ">
+                  <p class="text-right ">2/2002 - 6/2004</p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-xs-6 col-sm-6 ">
+                  <p>Erlanger Health System</p>
+                </div>
+                <div class="col-sm-6 col-xs-6 text-right ">
+                  <p>Chattanooga, Tennessee</p>
+                </div>
+              </div>
+              <p>Managed content, design, and technology direction for erlanger.org. Consolidated
+                Erlanger's 6 consumer websites into a central domain for information and
+                content management.</p>
+            </div>
+          </div>
+          <!-- end position -->
+          <!-- begin position -->
+          <div class="row endline jobby ">
+            <div class="col-xs-1 col-sm-1 ">
+              <i class="fa fa-2x fa-newspaper-o
+      " aria-hidden="true "></i>
+            </div>
+            <div class="col-xs-11 col-sm-11 ">
+              <div class="row ">
+                <div class="col-sm-8 col-xs-8 ">
+                  <h3>Internet/Media Specialist</h3>
+                </div>
+                <div class="col-sm-4 col-xs-4 ">
+                  <p class="text-right ">1/2000 - 1/2003</p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-xs-6 col-sm-6 ">
+                  <p>Hutcheson Medical Center</p>
+                </div>
+                <div class="col-sm-6 col-xs-6 text-right ">
+                  <p>Fort Oglethorpe, Georgia</p>
+                </div>
+              </div>
+              <p>Management of the hospital's web design &amp; development for internal
+                &amp; external communications.
+                <br>Media buying including budgeting for all print, TV, &amp; radio needs
+                of the institution.</p>
+            </div>
+          </div>
+          <!-- end position -->
+          <!-- begin position -->
+          <div class="row endline jobby ">
+            <div class="col-xs-1 col-sm-1 ">
+              <i class="fa fa-2x fa-server
+      " aria-hidden="true "></i>
+            </div>
+            <div class="col-xs-11 col-sm-11 ">
+              <div class="row ">
+                <div class="col-sm-8 col-xs-8 ">
+                  <h3>Network Administrator</h3>
+                </div>
+                <div class="col-sm-4 col-xs-4 ">
+                  <p class="text-right ">6/1994 - 1/2000</p>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-xs-6 col-sm-6 ">
+                  <p>Hutcheson Medical Center</p>
+                </div>
+                <div class="col-sm-6 col-xs-6 text-right ">
+                  <p>Fort Oglethorpe, Georgia</p>
+                </div>
+              </div>
+              <p>Responsible for the management of 250+ Windows, Novell, and UNIX desktops
+                and servers. Had a small staff who worked on projects and who were assigned
+                tasks based on help desk calls.</p>
+            </div>
+          </div>
+          <!-- end position -->
+        </div>
+        <div class="col-md-6 col-sm-11 col-xs-11">
+          <h2>Work Experience</h2>
+          <!--begin-->
+          <div class="row">
+            <div class="col-sm-5 col-xs-5 text-right">
+              <p>
+                <strong>Front-end Web Design</strong>
+              </p>
+            </div>
+            <div class="col-sm-7 col-xs-7">
+              <div class="progress">
+                <div class="active progress-bar accent-color primary-text-color" role="progressbar"
+                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">20+ Years Experience</div>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+          <!--begin-->
+          <div class="row">
+            <div class="col-sm-5 col-xs-5 text-right">
+              <p>
+                <b>Web Content Management</b>
+              </p>
+            </div>
+            <div class="col-sm-7 col-xs-7">
+              <div class="progress">
+                <div class="active progress-bar accent-color primary-text-color" role="progressbar"
+                aria-valuenow="90" aria-valuemin="0" aria-valuemax="75" style="width:75%">16+ Years Experience</div>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+          <!--begin-->
+          <div class="row">
+            <div class="col-sm-5 col-xs-5 text-right">
+              <p>
+                <strong>Project Management</strong>
+              </p>
+            </div>
+            <div class="col-sm-7 col-xs-7">
+              <div class="progress">
+                <div class="active progress-bar accent-color primary-text-color" role="progressbar"
+                aria-valuenow="90" aria-valuemin="0" aria-valuemax="75" style="width:75%">16+ Years Experience</div>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+          <!--begin-->
+          <div class="row">
+            <div class="col-sm-5 col-xs-5 text-right">
+              <p>
+                <strong>Server Administration</strong>
+              </p>
+            </div>
+            <div class="col-sm-7 col-xs-7">
+              <div class="progress">
+                <div class="active progress-bar accent-color primary-text-color" role="progressbar"
+                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">20+ Years Experience</div>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+          <!--begin-->
+          <div class="row">
+            <div class="col-sm-5 col-xs-5 text-right">
+              <p>
+                <strong>Leadership</strong>
+              </p>
+            </div>
+            <div class="col-sm-7 col-xs-7">
+              <div class="progress">
+                <div class="active progress-bar accent-color primary-text-color" role="progressbar"
+                aria-valuenow="90" aria-valuemin="0" aria-valuemax="75" style="width:75%">16+ Years Experience</div>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="active progress-bar accent-color primary-text-color" role="progressbar"
+              aria-valuenow="90" aria-valuemin="0" aria-valuemax="75" style="width:75%">16+ Years Experience</div>
+            </div>
+          </div>
+          <!--end-->
+          <!--begin-->
+          <div class="row">
+            <div class="col-sm-5 col-xs-5 text-right">
+              <p>
+                <strong>HTML5/CSS3/JS</strong>
+              </p>
+            </div>
+            <div class="col-sm-7 col-xs-7">
+              <div class="progress">
+                <div class="active progress-bar accent-color primary-text-color" role="progressbar"
+                aria-valuenow="90" aria-valuemin="0" aria-valuemax="75" style="width:75%">16+ Years Experience</div>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+          <!--begin-->
+          <div class="row">
+            <div class="col-sm-5 col-xs-5 text-right">
+              <p>
+                <strong>Health Care Technology</strong>
+              </p>
+            </div>
+            <div class="col-sm-7 col-xs-7">
+              <div class="progress">
+                <div class="active progress-bar accent-color progress-bar-striped primary-text-color"
+                role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                style="width:100%">20+ Years Experience</div>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+          <h2>Additional Skills</h2>
+          <div class="row">
+            <div class="col-xs-10 col-md-10 col-sm-12 col-xs-offset-1 col-sm-offset-0 col-md-offset-2">
+              <span class="label label-primary">Bootstrap</span>
+              <span class="label label-primary">Foundation</span>
+              <span class="label label-primary">Graphic Design</span>
+              <span class="label label-primary">CSS3</span>
+              <span class="label label-primary">HTML5</span>
+              <span class="label label-primary">Web Usability</span>
+              <span class="label label-primary">TeamSite/LiveSite</span>
+              <span class="label label-primary">IBM WCM</span>
+              <span class="label label-primary">Jekyll</span>
+              <span class="label label-primary">WordPress</span>
+              <span class="label label-primary">Sharepoint</span>
+              <span class="label label-primary">Drupal</span>
+            </div>
+          </div>
+          <h2>Achievements</h2>
+          <ul>
+            <li>Web Marketing Association Outstanding Web Site WebAward 2012</li>
+            <li>Web Marketing Association WebAward for Outstanding Achievement in Web
+              Development 2009, 2008, 2007, 2006</li>
+            <li>IAC Outstanding Website award 2014</li>
+          </ul>
+          <h2>Education</h2>
+          <!-- ed -->
+          <div class="jobby endline">
+            <div class="row">
+              <div class="col-sm-5 col-xs-5 col-md-offset-1">
+                <h4>Chattanooga State</h4>
+              </div>
+              <div class="col-sm-5 col-xs-5">
+                <p class="text-right">Spring 1996 - Fall 1998</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-5 col-sm-5 col-md-offset-1">
+                <p>Chattanooga, Tennessee</p>
+              </div>
+              <div class="col-sm-5 col-xs-5 text-right">
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+          <!-- end ed -->
+          <!-- ed -->
+          <div class="jobby endline">
+            <div class="row">
+              <div class="col-sm-5 col-xs-5 col-md-offset-1">
+                <h4>Dalton State College</h4>
+              </div>
+              <div class="col-sm-5 col-xs-5">
+                <p class="text-right">Spring 1993 - Winter 1995</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-5 col-sm-5 col-md-offset-1">
+                <p>Dalton, Georgia</p>
+              </div>
+              <div class="col-sm-5 col-xs-5 text-right">
+                <p>Business Administration</p>
+              </div>
+            </div>
+          </div>
+          <!-- end ed -->
+          <h2>Interests</h2>
+          <div class="row">
+            <div class="col-xs-8 col-sm-11 col-sm-offset-1 col-xs-offset-2">
+              <span class="label primary-color">Playing Drums</span>
+              <span class="label primary-color">Traveling</span>
+              <span class="label primary-color">Cooking</span>
+              <span class="label primary-color">Reading</span>
+              <span class="label primary-color">Open Source Projects</span>
+              <span class="label primary-color">Web Technology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section section-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-8 col-xs-6">
+            <p class="text-left">
+              <i class="fa fa-copyright" aria-hidden="true"></i>Mike Kelley</p>
+          </div>
+          <div class="col-md-6 col-sm-4 col-xs-6">
+            <p class="text-right">Made in Tennessee, USA
+              <i class="fa fa-home" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <!-- v2 kelley public -->
+  </body>
+
+</html>
