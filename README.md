@@ -7,8 +7,7 @@ These are the basic files I use for <a href="http://mkelley.com" target="_blank"
 <li>Bootstrapcdn.com</li>
 <li>Bootstrap 3</li>
 <li>Font Awesome</li>
-<li>Bootswatch</li>
 <li>Google Fonts</li>
 </ul>
 
-All photos here are &copy; Mike Kelley.
+
